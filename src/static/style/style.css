@@ -1,0 +1,31 @@
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td:not(.desc) {
+    text-align: center;
+}
+
+td.desc{
+    /* text-indent: 50px; */
+    /* line-height: 1.2; */
+}
+
+ul.desc{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li.desc{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-indent: 10px;
+}

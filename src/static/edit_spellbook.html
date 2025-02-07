@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Spellbook</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <h1>Edit Spellbook</h1>
+    <button onclick="window.location.href='/spellbook.html';">Done</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Class</th>
+                <th>Level</th>
+                <th>Spells Known</th>
+                <th>Cantrips Known</th>
+            </tr>
+        </thead>
+        <tbody id="spell stats"></tbody>
+    </table>
+    <table>
+        <thead>
+            <tr id="slot level row">
+                <th>Slot Level</th>
+            </tr>
+            <tr id="total slots row">
+                <th>Slots Total</th>
+            </tr>
+        </thead>
+        <tbody id="slots table"></tbody>
+    </table>
+    <h2>Current Spells</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Spell</th>
+                <th>Level</th>
+                <th></th>
+                <!-- <th>Components</th>
+                <th>Duration</th>
+                <th>Range</th> -->
+                <!-- <th>Description</th> -->
+            </tr>
+        </thead>
+        <tbody id="current spells table"></tbody>
+    </table>
+    <h2>Available Spells</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Spell</th>
+                <th>Level</th>
+                <th></th>
+                <!-- <th>Components</th>
+                <th>Duration</th>
+                <th>Range</th> -->
+                <!-- <th>Description</th> -->
+            </tr>
+        </thead>
+        <tbody id="available spells table"></tbody>
+    </table>
+    <script src="/scripts/edit_spellbook.js"></script>
+</body>
+</html>

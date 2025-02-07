@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Spell</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <form action="/spells" method="post" id="new_spell">
+        <label for="name">Spell Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="level">Spell Level:</label>
+        <select id="level" name="level">
+        <option value="cantrip">Cantrip</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+        <br>
+
+        <label for="classes">Select classes (use shift/crtl to select multiple):</label>
+        <select id="classes" name="classes" multiple>
+        <option value="bard">Bard</option>
+        <option value="cleric">Cleric</option>
+        <option value="druid">Druid</option>
+        <option value="paladin">Paladin</option>
+        <option value="ranger">Ranger</option>
+        <option value="sorcerer">Sorcerer</option>
+        <option value="warlock">Warlock</option>
+        <option value="wizard">Wizard</option>
+        </select>
+        <br>
+
+        <!-- add subclasses later -->
+
+        <label for="school">School:</label>
+        <select id="school" name="school">
+        <option value="abjuration">Abjuration</option>
+        <option value="conjuration">Conjuration</option>
+        <option value="divination">Divination</option>
+        <option value="enchantment">Enchantment</option>
+        <option value="evocation">Evocation</option>
+        <option value="illusion">Illusion</option>
+        <option value="necromancy">Necromancy</option>
+        <option value="transmutation">Transmutation</option>
+        </select>
+        <br>
+
+        <label for="casting_time">Casting Time:</label><br>
+        <input type="text" id="casting_time" name="casting_time"><br>
+
+        <label for="range">Range:</label><br>
+        <input type="text" id="range" name="range"><br>
+
+        <label for="duration">Duration:</label><br>
+        <input type="text" id="duration" name="duration"><br>
+        
+        <label for="concentration">Concentration:</label>
+        <input type="checkbox" id="concentration" name="concentration" value="True">
+        <br>
+
+        <label for="ritual">Ritual:</label>
+        <input type="checkbox" id="ritual" name="ritual" value="True">
+        <br>
+
+        <label for="components">Components (use shift/crtl to select multiple):</label>
+        <select id="components" name="components" multiple>
+        <option value="V">Verbal (V)</option>
+        <option value="S">Somatic(S)</option>
+        <option value="M">Material (M)</option>
+        </select>
+        <br>
+
+        <label for="material">Materials Required:</label><br>
+        <input type="text" id="material" name="material"><br>
+
+        <label for="desc">Description:</label><br>
+        <input type="text" id="desc" name="desc"><br>
+
+        <label for="higher_level">At Higher Level:</label><br>
+        <input type="text" id="higher_level" name="higher_level"><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    <script src="/scripts/add_spell.js"></script>
+</body>
+</html>
